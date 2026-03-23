@@ -4,16 +4,26 @@ A collection of Claude Code skills for improving work efficiency.
 
 ## Installation
 
-### CLI Installation
+### Install All Skills
 
 ```bash
-npx skills add fsZhuangB/lizhi-skills
+git clone https://github.com/fsZhuangB/lizhi-skills.git
+cp -r lizhi-skills/skills/* ~/.claude/skills/
 ```
 
-### Individual Skill Installation
+### Install a Single Skill
 
 ```bash
-npx skills add fsZhuangB/lizhi-skills --skill <skill-name>
+git clone https://github.com/fsZhuangB/lizhi-skills.git
+cp -r lizhi-skills/skills/lizhi-<name> ~/.claude/skills/
+```
+
+### Project-Level Installation
+
+If you only want skills available in a specific project, copy them into your project's `.claude/skills/` directory instead:
+
+```bash
+cp -r lizhi-skills/skills/lizhi-<name> your-project/.claude/skills/
 ```
 
 ## Skills
