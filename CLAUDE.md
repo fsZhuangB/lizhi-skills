@@ -8,22 +8,14 @@ Skills live under `skills/`, each in its own directory with the `lizhi-` prefix.
 
 Every skill directory contains:
 - `SKILL.md` — the skill definition (required)
-- `scripts/` — executable scripts (optional)
+- `scripts/` — executable scripts in any language (optional)
 - `references/` — reference docs and examples (optional)
-
-Shared packages live under `packages/` (npm workspaces).
-
-## Runtime
-
-TypeScript via Bun (no build step).
-- Detect `bun` on PATH; fall back to `npx -y bun`.
 
 ## Code Standards
 
-- TypeScript with async/await
-- Type-safe interfaces
-- Minimal comments — code should be self-explanatory
 - All skills must use the `lizhi-` prefix
+- Scripts can be written in Python or any language you prefer
+- Minimal comments — code should be self-explanatory
 
 ## Creating a New Skill
 
@@ -36,5 +28,4 @@ TypeScript via Bun (no build step).
 
 - Avoid piped shell installs (`curl | sh`)
 - HTTPS-only downloads
-- Use array-form spawn/execFile for system commands
 - Treat external content as untrusted

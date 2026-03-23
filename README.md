@@ -28,23 +28,13 @@ Skills are organized under the `skills/` directory. Each skill contains:
 
 ```
 lizhi-skills/
-├── .claude/skills/       # Project-level Claude skills
 ├── skills/               # All skill definitions
-├── packages/             # Shared packages (monorepo)
-├── scripts/              # Build and utility scripts
-├── docs/                 # Documentation
 ├── CLAUDE.md             # Claude Code project guide
-└── package.json          # Node.js configuration
+├── README.md
+└── .gitignore
 ```
 
-## Development
-
-### Prerequisites
-
-- Node.js >= 18
-- [Claude Code](https://claude.ai/claude-code) CLI
-
-### Adding a New Skill
+## Adding a New Skill
 
 1. Create a new directory under `skills/` with the `lizhi-` prefix
 2. Add a `SKILL.md` file defining the skill's behavior
